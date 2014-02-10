@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Tuan Dang </title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <style>
+      #map_canvas {
+        width: 500px;
+        height: 800px;
+        margin-left: 400px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script>
+
+      function initialize() {
+        var myLatlng = new google.maps.LatLng(16.478312,107.599312);
+        var myLatlng2 = new google.maps.LatLng(16.437752,107.582585);
+        var myLatlng3 = new google.maps.LatLng(21.048338,105.836767);
+        var myLatlng4 = new google.maps.LatLng(16.101319,108.278404);
+        var myLatlng5 = new google.maps.LatLng(13.92382,108.916727);
+        var myLatlng6 = new google.maps.LatLng(10.776998,106.695097);
+
+        var map_canvas = document.getElementById('map_canvas');
+        var map_options = {
+          center: new google.maps.LatLng(16.84, 106.5),
+          zoom: 6,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+
+        var map = new google.maps.Map(map_canvas, map_options)
+
+
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'Vy Da village'
+        });
+
+        var marker2 = new google.maps.Marker({
+          position: myLatlng2,
+          map: map,
+          title: 'Nam Giao Esplanade'
+        });
+
+        var marker3 = new google.maps.Marker({
+          position: myLatlng3,
+          map: map,
+          title: 'Tran Quoc Pagoda'
+        });
+
+        var marker4 = new google.maps.Marker({
+          position: myLatlng4,
+          map: map,
+          title: 'Linh Ung Pagoda'
+        });
+
+        var marker5 = new google.maps.Marker({
+          position: myLatlng5,
+          map: map,
+          title: 'Old House of Quang Trung King'
+        });
+
+        var marker6 = new google.maps.Marker({
+          position: myLatlng6,
+          map: map,
+          title: 'Independence Palace'
+        });
+      }
+
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  
+  <body>
+    <h2 style="text-align:center;font-size:40px"><i> Traveling </i></h2>
+    <div style="font-size:20px; margin-left:10px; text-indent: 20px" id="hobbies"><br></br>
+      <p >I like to travel to places mentioned in my favorite songs, poems, and historical stories. 
+        These are the places I have read about from poems, stories, or history when I was young, but never had a chance to experience them in reality. Everytime I come back to Vietnam in the summer, I take the bus to the main city close by, rent a motel and a motorbike, and ride it to these places.</p>
+
+       <p> Some of them are the Vi Da village from the famous <a href="http://english.vietnamnet.vn/fms/art-entertainment/48476/lost-works-go-on-show-to-depict-romantic-poet-s-life.html"> "This Is Vy Da Village" </a>of <a href="http://en.wikipedia.org/wiki/Han_Mac_Tu">Han Mac Tu </a>, the <a href="http://en.wikipedia.org/wiki/Tr%E1%BA%A5n_Qu%E1%BB%91c_Pagoda">Tran Quoc pagoda</a> in the Vietnamese traditional poem, or the <a herf="http://www.saigon-gpdaily.com.vn/culture_art/2013/4/104547/">Nam Giao Esplanade</a>  where the old kings of Vietnam used to pray for national peace. All the locations are
+        pinned in this map.</p>
+
+        <p>By actually going to those places, I can understand those songs, poems, and hitorical stories more deeply, at a more personal level. I always feel intrigued about how the places I go to used to witness many political events, social changes in the long but complicated history of Vietnam.</p>
+
+
+    </div>
+    <div id="map_canvas"></div>
+  </body>
+</html>
