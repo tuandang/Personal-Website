@@ -1,0 +1,178 @@
+/* font for all pages */
+body {
+	font-family: 'Nunito', sans-serif;
+	color: #faf3bc;
+	background: #420600 url('img/bg-texture.jpg') repeat; /* this is the main one
+	                                                         repeat this image in background */
+}
+
+a {
+	color: #4fb69f;
+	text-decoration: none; /* no underline for links */
+}
+
+h1 {
+	font-size: 1.750em;
+	font-weight: 100;
+	letter-spacing: -1.5px; /* letters closer */
+}
+
+h2 {
+	font-weight: 100;
+	font-size: 1.500em;
+	color: #b4c34f;
+}
+
+h3 {
+	font-weight: 100;
+	font-size: 1.125em;
+	color: #ed6c85;
+}
+
+#hobbies
+{
+	color: white;
+
+
+}
+
+
+#github
+{
+	width: 10px;
+	height: 10px;
+}
+
+#video
+{
+	margin-right: 10px;
+}
+
+/* button */
+.btn {
+	padding: 5px 15px; /* makes element bigger */ /* top & bottom :: left & right */
+	margin: 10px 0; /* space around the element */
+	color: #faf3bc;
+	background: #4fb69f url('img/texture.png') no-repeat right top; /* background from top and right */
+	border-radius: 25px; /* round corners around box */
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	text-transform: uppercase;
+}
+
+/* you you click on the button */
+.btn:hover {
+	background-color: #4cc4a7;
+}
+
+
+.btn-small {
+	padding: 10px 25px;
+	margin: 50px 0;
+	color: #faf3bc;
+	font-size: .75em;
+	background: #b22316 url('texture.png') no-repeat right bottom;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	text-transform: uppercase;
+}
+
+.btn-small:hover {
+	
+	background-color: #c62718;
+}
+
+.submit-btn {
+	padding: 10px 25px;
+	margin: 20px 0 50px 0;
+	color: #faf3bc;
+	font-family: 'Nunito', sans-serif;
+	border: 0;
+	font-weight: 100;
+	font-size: .75em;
+	background: #b22316 url('texture.png') no-repeat right top;;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	text-transform: uppercase;
+}
+
+/* bring the list "about me..." to right */
+ul.nav {
+	margin: 0 auto;
+	padding: 120px 0 0 0; /* space from the top of page */
+	list-style: none; /* no bullet points */
+	float: right;     /* float to right side */
+}
+
+ul.nav li {
+	float: left; /* all items are inline - on same line */
+	margin-right: 40px; /* space between list items */
+}
+
+/* contact me button */
+ul.nav li.last {
+	margin: 0;
+	padding: 5px 30px;
+	color: #faf3bc;
+	font-family: 'Nunito', sans-serif;
+	border: 0;
+	font-weight: 100;
+	font-size: .75em;
+	background: #b22316 url('texture.png') no-repeat right top;;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	text-transform: uppercase;
+}
+
+ul.nav li.last:hover {
+		background-color: #c62718;
+}
+
+/* change color in the box */
+ul.nav li a {
+	color: #faf3bc;
+	display: block;
+	text-decoration: none;
+}
+
+/* move intro down to align with image */
+#intro {
+	margin: 20px 0 75px 0;
+}
+
+/* border for images of hacktech*/
+#hack-tech img {
+	border: 8px solid #faf3bc;
+	margin: 0 0 20px 0;
+}
+
+#popular-cupcakes img {
+	border: 8px solid #faf3bc;
+}
+
+#micromouse img {
+	border: 8px solid #faf3bc;
+}
+
+#contact span{
+	color: #b22316;
+	font-weight: 600;
+}
+
+#programming
+{
+	border-color: 10px solid black;
+	margin: 20px 0px;
+	border-radius: 10px;
+
+}
+
+#copyright {
+	border-top: 5px solid #2a0400; /* top of border */
+	padding: 10px 0;
+	margin: 15px 0;
+	text-align: center; /* move text inside of an element */
+}
